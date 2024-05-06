@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-tw" xml:lang="zh-tw" class="yui3-js-enabled"><head>
+  <title>iLearn</title>
+  <link rel="shortcut icon" href="https://ilearn.fcu.edu.tw/pluginfile.php/1/theme_moove/favicon/1711685263/favicon.ico">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="moodle, iLearn">
+  <link rel="stylesheet" type="text/css" href="https://ilearn.fcu.edu.tw/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css"><script charset="utf-8" id="yui_3_17_2_1_1714998313695_8" src="https://ilearn.fcu.edu.tw/theme/yui_combo.php?m/1711685271/core/event/event-min.js&amp;m/1711685271/filter_mathjaxloader/loader/loader-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1714998313695_19" src="https://ilearn.fcu.edu.tw/theme/yui_combo.php?3.17.2/event-mousewheel/event-mousewheel-min.js&amp;3.17.2/event-resize/event-resize-min.js&amp;3.17.2/event-hover/event-hover-min.js&amp;3.17.2/event-touch/event-touch-min.js&amp;3.17.2/event-move/event-move-min.js&amp;3.17.2/event-flick/event-flick-min.js&amp;3.17.2/event-valuechange/event-valuechange-min.js&amp;3.17.2/event-tap/event-tap-min.js" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://ilearn.fcu.edu.tw/theme/styles.php/moove/1711685263_1689239036/all">
+  <script>
+    //<![CDATA[
+    var M = {}; M.yui = {};
+    M.pageloadstarttime = new Date();
+    M.cfg = {"wwwroot":"https:\/\/ilearn.fcu.edu.tw","homeurl":{},"sesskey":"bCCB019KPX","sessiontimeout":"14400","sessiontimeoutwarning":"10800","themerev":"1711685263","slasharguments":1,"theme":"moove","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1711685271","admin":"admin","svgicons":true,"usertimezone":"Asia\/Taipei","courseId":1,"courseContextId":2,"contextid":2,"contextInstanceId":1,"langrev":1711685271,"templaterev":"1711685271"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+    var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+      if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+    YUI_config = {"debug":false,"base":"https:\/\/ilearn.fcu.edu.tw\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/ilearn.fcu.edu.tw\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/ilearn.fcu.edu.tw\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/ilearn.fcu.edu.tw\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/ilearn.fcu.edu.tw\/theme\/yui_combo.php?m\/1711685271\/","combine":true,"comboBase":"https:\/\/ilearn.fcu.edu.tw\/theme\/yui_combo.php?","ext":false,"root":"m\/1711685271\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_stash-form":{"requires":["base","node","event","handlebars","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_videos-videos":{"requires":["base","cookie","node","event","moodle-core-log","moodle-core-notification-alert"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_mycurricular-filter":{"requires":["base","io-base","node","json-parse"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-videosaddon-watermark":{"requires":["base","cookie","node","event","moodle-core-log","moodle-core-notification-alert"]},"moodle-videosaddon-seekbutton":{"requires":["base","cookie","node","event","moodle-core-log","moodle-core-notification-alert"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/ilearn.fcu.edu.tw\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/ilearn.fcu.edu.tw\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1711685271\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/ilearn.fcu.edu.tw\/lib\/javascript.php\/1711685271\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/ilearn.fcu.edu.tw\/lib\/javascript.php\/1711685271\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
+    M.yui.loader = {modules: {}};
+
+    //]]>
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3W5PDHEJ2K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3W5PDHEJ2K');
+  </script><meta name="description" content="網路教室">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/x-mathjax-config">MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+  </script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="https://ilearn.fcu.edu.tw/lib/requirejs.php/1711685271/core/first.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="https://ilearn.fcu.edu.tw/lib/javascript.php/1711685271/lib/jquery/jquery-3.6.1.min.js"></script></head>
+
+<body id="page-site-index" class="limitedwidth format-site course path-site chrome dir-ltr lang-zh_tw yui-skin-sam yui3-skin-sam ilearn-fcu-edu-tw pagelayout-frontpage course-1 context-2 notloggedin uses-drawers jsenabled eupopup">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+<div id="page-wrapper" class="d-print-block">
+
+  <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">跳至主內容</a>
+  </div><script src="https://ilearn.fcu.edu.tw/lib/javascript.php/1711685271/lib/polyfills/polyfill.js"></script>
+  <script src="https://ilearn.fcu.edu.tw/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://ilearn.fcu.edu.tw/lib/javascript.php/1711685271/lib/javascript-static.js"></script>
+  <script src="https://ilearn.fcu.edu.tw/theme/javascript.php/moove/1711685263/head"></script>
+  <script>
+    //<![CDATA[
+    document.body.className += ' jsenabled';
+    //]]>
+  </script>
+
+
+
+  <nav class="navbar fixed-top navbar-light bg-white navbar-expand shadow" aria-label="網站導覽" id="yui_3_17_2_1_1714998313695_20">
+
+    <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_moove-drawers-primary">
+      <span class="navbar-toggler-icon"></span>
+      <span class="sr-only">側板</span>
+    </button>
+
+    <a href="https://ilearn.fcu.edu.tw/" class="navbar-brand d-none d-md-flex align-items-center m-0 mr-4 p-0 aabtn">
+      <img src="//ilearn.fcu.edu.tw/pluginfile.php/1/theme_moove/logo/1711685263/moodle4_log.jpg" class="logo mr-1" alt="iLearn">
+    </a>
+
+    <div class="primary-navigation">
+      <nav class="moremenu navigation observed">
+        <ul id="moremenu-6638cc2a4a0ef-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
+          <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false">
+            <a role="menuitem" class="nav-link active " href="https://ilearn.fcu.edu.tw/" aria-current="true">
+              首頁
+            </a>
+          </li>
+          <li class="dropdown nav-item" role="none" data-forceintomoremenu="false">
+            <a class="dropdown-toggle nav-link  " id="drop-down-6638cc2a49c69" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-6638cc2a49c69" tabindex="-1">
+              學習資源
+            </a>
+            <div class="dropdown-menu" role="menu" id="drop-down-menu-6638cc2a49c69" aria-labelledby="drop-down-6638cc2a49c69">
+              <a class="dropdown-item" role="menuitem" href="https://ilearn.fcu.edu.tw/course/view.php?id=77263" tabindex="-1">教師篇</a>
+              <a class="dropdown-item" role="menuitem" href="https://ilearn.fcu.edu.tw/course/view.php?id=77266" tabindex="-1">學生篇</a>
+              <a class="dropdown-item" role="menuitem" href="https://ilearn.fcu.edu.tw/course/view.php?id=96273" tabindex="-1">新進教師工作坊</a>
+              <a class="dropdown-item" role="menuitem" href="https://ilearn.fcu.edu.tw/course/view.php?id=43853" tabindex="-1">操作指引</a>
+              <a class="dropdown-item" role="menuitem" href="https://ilearn.fcu.edu.tw/course/view.php?id=43888" tabindex="-1">教務資料下載</a>
+              <a class="dropdown-item" role="menuitem" href="https://ilearn.fcu.edu.tw/course/view.php?id=101242" tabindex="-1">校園智慧財產權宣導</a>
+            </div>
+          </li>
+          <li class="dropdown nav-item" role="none" data-forceintomoremenu="false">
+            <a class="dropdown-toggle nav-link  " id="drop-down-6638cc2a49ea4" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-6638cc2a49ea4" tabindex="-1">
+              Q&amp;A
+            </a>
+            <div class="dropdown-menu" role="menu" id="drop-down-menu-6638cc2a49ea4" aria-labelledby="drop-down-6638cc2a49ea4">
+              <a class="dropdown-item" role="menuitem" href="https://ilearn.fcu.edu.tw/course/view.php?id=44153" tabindex="-1">Q&amp;A彙整</a>
+            </div>
+          </li>
+          <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
+            <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-6638cc2a4a0ef" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+              更多
+            </a>
+            <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-6638cc2a4a0ef" role="menu">
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <ul class="navbar-nav d-none d-md-flex my-1 px-1">
+      <!-- page_heading_menu -->
+
+    </ul>
+
+    <div id="usernavigation" class="navbar-nav ml-auto">
+      <div class="navbarcallbacks">
+
+      </div>
+      <div class="langmenu">
+        <div class="dropdown show">
+          <a href="#" role="button" id="lang-menu-toggle" data-toggle="dropdown" aria-label="Language" aria-haspopup="true" aria-controls="lang-action-menu" class="btn dropdown-toggle">
+            <i class="icon fa fa-language fa-fw mr-1" aria-hidden="true"></i>
+            <span class="langbutton">
+                                正體中文 ‎(zh_tw)‎
+                            </span>
+            <b class="caret"></b>
+          </a>
+          <div role="menu" aria-labelledby="lang-menu-toggle" id="lang-action-menu" class="dropdown-menu dropdown-menu-right">
+            <a href="#" class="dropdown-item pl-5" role="menuitem" aria-current="true">
+              正體中文 ‎(zh_tw)‎
+            </a>
+            <a href="https://ilearn.fcu.edu.tw/?lang=en" class="dropdown-item pl-5" role="menuitem">
+              English ‎(en)‎
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="divider border-left h-75 align-self-center mx-1"></div>
+
+      <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+        <div class="usermenu">
+                            <span class="login pl-2">
+                                    <a href="https://d1204504.github.io/fish2/">登入</a>
+                            </span>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+
+  <div class="drawer drawer-left drawer-primary d-print-none" data-region="fixed-drawer" id="theme_moove-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1" aria-hidden="true">
+    <div class="drawerheader">
+      <button class="btn drawertoggle icon-no-margin hidden" data-toggler="drawers" data-action="closedrawer" data-target="theme_moove-drawers-primary" data-toggle="tooltip" data-placement="right" title="Close drawer" data-aria-hidden-tab-index="" tabindex="-1">
+        <i class="icon fa fa-times fa-fw " aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+      <div class="list-group">
+        <a href="https://ilearn.fcu.edu.tw/" class="list-group-item list-group-item-action active " aria-current="true" data-aria-hidden-tab-index="" tabindex="-1">
+          首頁
+        </a>
+        <a id="drop-down-1" href="#" class="list-group-item list-group-item-action icons-collapse-expand collapsed d-flex" data-toggle="collapse" data-target="#drop-down-menu-1" aria-expanded="false" aria-controls="drop-down-menu-1" data-aria-hidden-tab-index="" tabindex="-1">
+          學習資源
+          <span class="ml-auto expanded-icon icon-no-margin mx-2">
+                        <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"></i>
+                        <span class="sr-only">
+                            展延
+                        </span>
+                    </span>
+          <span class="ml-auto collapsed-icon icon-no-margin mx-2">
+                        <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"></i>
+                        <span class="sr-only">
+                            展延
+                        </span>
+                    </span>
+        </a>
+        <div class="collapse list-group-item p-0 border-0" role="menu" id="drop-down-menu-1" aria-labelledby="drop-down-1">
+          <a href="https://ilearn.fcu.edu.tw/course/view.php?id=77263" class="pl-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index="" tabindex="-1">教師篇</a>
+          <a href="https://ilearn.fcu.edu.tw/course/view.php?id=77266" class="pl-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index="" tabindex="-1">學生篇</a>
+          <a href="https://ilearn.fcu.edu.tw/course/view.php?id=96273" class="pl-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index="" tabindex="-1">新進教師工作坊</a>
+          <a href="https://ilearn.fcu.edu.tw/course/view.php?id=43853" class="pl-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index="" tabindex="-1">操作指引</a>
+          <a href="https://ilearn.fcu.edu.tw/course/view.php?id=43888" class="pl-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index="" tabindex="-1">教務資料下載</a>
+          <a href="https://ilearn.fcu.edu.tw/course/view.php?id=101242" class="pl-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index="" tabindex="-1">校園智慧財產權宣導</a>
+        </div>
+        <a id="drop-down-8" href="#" class="list-group-item list-group-item-action icons-collapse-expand collapsed d-flex" data-toggle="collapse" data-target="#drop-down-menu-8" aria-expanded="false" aria-controls="drop-down-menu-8" data-aria-hidden-tab-index="" tabindex="-1">
+          Q&amp;A
+          <span class="ml-auto expanded-icon icon-no-margin mx-2">
+                        <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"></i>
+                        <span class="sr-only">
+                            展延
+                        </span>
+                    </span>
+          <span class="ml-auto collapsed-icon icon-no-margin mx-2">
+                        <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"></i>
+                        <span class="sr-only">
+                            展延
+                        </span>
+                    </span>
+        </a>
+        <div class="collapse list-group-item p-0 border-0" role="menu" id="drop-down-menu-8" aria-labelledby="drop-down-8">
+          <a href="https://ilearn.fcu.edu.tw/course/view.php?id=44153" class="pl-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index="" tabindex="-1">Q&amp;A彙整</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers drag-container bg-white">
+
+    <section id="featuredbox" class="row">
+      <div class="featuredboxes">
+        <iframe src="https://service120-sds.fcu.edu.tw/iLearnAD/Adrotation.aspx?identity=" name="mainframe" id="mainframe" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="No">
+        </iframe>
+      </div>
+    </section>
+
+
+
+    <div id="topofscroll">
+      <div id="page-content" class="d-print-block main-inner">
+        <div id="region-main-box">
+          <section id="region-main" aria-label="內容">
+            <span class="notifications" id="user-notifications"></span>
+            <div role="main"><span id="maincontent"></span><div class="course-content">
+              <div class="sitetopic">
+                <ul class="topics frontpage">
+                  <li id="section-1" class="section course-section main  clearfix
+
+                            " data-sectionid="1" data-sectionreturnid="1" data-for="section" data-id="2" data-number="1">
+                    <div class="course-section-header d-flex" data-for="section_title" data-id="2" data-number="1">
+                      <div data-region="sectionbadges" class="sectionbadges d-flex align-items-center">
+                      </div>
+                    </div>
+                    <div id="coursecontentcollapse1" class="content
+
+                                ">
+                      <div class=" my-3" data-for="sectioninfo">
+                        <div class="section_availability course-description-item">
+                        </div>
+                      </div>
+                      <ul class="section m-0 p-0 img-text " data-for="cmlist">
+                      </ul>
+
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div><br></div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <section id="faq" class="scale-up scale-up-show">
+      <div class="moove-container-fluid">
+        <h2>FAQ</h2>
+
+        <div class="accordion" id="accordionFaq">
+          <div class="card shadow">
+            <div class="card-header" id="heading-1">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                  1. 要如何看到全部課程的最新公告資訊呢?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse-1" class="collapse" aria-labelledby="heading-1" data-parent="#accordionFaq">
+              <div class="card-body">
+                <p>在進入首頁時，右上方有個收信的圖示，有新消息皆會顯示在這。&nbsp;</p><p>另外再點姓名下拉--&gt; 訊息--&gt; 再選擇訊息導航--&gt;最近的通知，就可以看全部課程的通知。</p>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow">
+            <div class="card-header" id="heading-2">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                  2. 課程預警時間截止後退選的確認作業要如何處理?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordionFaq">
+              <div class="card-body">
+                <p dir="ltr" style="text-align: left;"></p><p>教師部分：</p><p>老師可利用FCU課務工具_查詢加退選名單作業，確認各式學生名單資料，包括修課中、已退選或是加退選後退選學生。</p><p>另外，也可利用課程預警與出席紀錄作業中的註記資料檢視相關資訊。&nbsp;</p><p>至於點名作業資料或是列印簽到表、點名簿，只要學生一經退選成功，學生資料即不在清單內。</p><p align="center">&nbsp;</p><p>學生部分：</p><p>只要學生該科目退選成功，可再次檢視我的課表(即時同步)或是網路教室中的課程清單(隔天同步)，不會再出現該科目資料。</p><p>學生可利用FCU個人工具中的我的課表或是課程清單檢視資料。</p><br><p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer id="page-footer">
+      <div class="moove-container-fluid footer-columns">
+        <div class="row">
+          <div class="col-md-4 column-left">
+            <div class="contact">
+              <ul>
+              </ul>
+            </div>
+
+            <div class="socialnetworks">
+              <ul class="mb-0">
+
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 column-center">
+            <div class="supportemail"><a href="https://ilearn.fcu.edu.tw/user/contactsitesupport.php" class="btn contactsitesupport btn-outline-info"><i class="icon fa fa-life-ring fa-fw iconhelp icon-pre" aria-hidden="true"></i>聯絡我們</a></div>
+
+            <div class="logininfo">您尚未登入 (<a href="https://ilearn.fcu.edu.tw/login/index.php">登入</a>)</div>
+
+            <div class="tool_usertours-resettourcontainer"></div>
+          </div>
+          <div class="col-md-4 column-right">
+            <a href="https://download.moodle.org/mobile">取得行動應用程式</a>
+            <div class="stores">
+              <a href="https://play.google.com/store/apps/details?id=com.moodle.moodlemobile">
+                <img src="https://ilearn.fcu.edu.tw/theme/moove/pix/store_google.svg" alt="Play Store">
+              </a>
+              <a class="mt-1" href="https://apps.apple.com/app/id633359593">
+                <img src="https://ilearn.fcu.edu.tw/theme/moove/pix/store_apple.svg" alt="App Store">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-content-debugging footer-dark bg-dark text-light">
+        <div class="moove-container-fluid footer-dark-inner">
+
+        </div>
+      </div>
+
+      <div data-region="footer-container-popover">
+        <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="Show footer" data-original-title="" title="">
+          <i class="icon fa fa-phone fa-fw " aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="footer-content-popover container" data-region="footer-content-popover">
+        <div class="footer-section p-3 border-bottom">
+
+          <div><a target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:5a9306e8-53d3-45fb-8ba4-42d63ab0c435?threadId=19:43294e15b0a8486383d0a0d48a3246c4@thread.skype&amp;amp;ctx=chat"><i class="icon fa fa-life-ring fa-fw fa fa-life-ring" aria-hidden="true"></i></a><a href="https://teams.microsoft.com/_#/conversations/8:orgid:5a9306e8-53d3-45fb-8ba4-42d63ab0c435?threadId=19:43294e15b0a8486383d0a0d48a3246c4@thread.skype&amp;ctx=chat" target="_blank">線上服務台</a><i class="icon fa fa-external-link fa-fw ml-1" title="Opens in new window" role="img" aria-label="Opens in new window"></i></div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="madeby">
+          <p>©2023 逢甲大學 Feng Chia University<br>
+            <a href="https://www.fcu.edu.tw/privacystatement/" target="_blank">隱私權聲明</a> 本站最佳瀏覽解析度為 1024*768 以上</p>
+
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      //<![CDATA[
+      var require = {
+        baseUrl : 'https://ilearn.fcu.edu.tw/lib/requirejs.php/1711685271/',
+        // We only support AMD modules with an explicit define() statement.
+        enforceDefine: true,
+        skipDataMain: true,
+        waitSeconds : 0,
+
+        paths: {
+          jquery: 'https://ilearn.fcu.edu.tw/lib/javascript.php/1711685271/lib/jquery/jquery-3.6.1.min',
+          jqueryui: 'https://ilearn.fcu.edu.tw/lib/javascript.php/1711685271/lib/jquery/ui-1.13.2/jquery-ui.min',
+          jqueryprivate: 'https://ilearn.fcu.edu.tw/lib/javascript.php/1711685271/lib/requirejs/jquery-private'
+        },
+
+        // Custom jquery config map.
+        map: {
+          // '*' means all modules will get 'jqueryprivate'
+          // for their 'jquery' dependency.
+          '*': { jquery: 'jqueryprivate' },
+          // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+          '*': { process: 'core/first' },
+
+          // 'jquery-private' wants the real jQuery module
+          // though. If this line was not here, there would
+          // be an unresolvable cyclic dependency.
+          jqueryprivate: { jquery: 'jquery' }
+        }
+      };
+
+      //]]>
+    </script>
+    <script src="https://ilearn.fcu.edu.tw/lib/javascript.php/1711685271/lib/requirejs/require.min.js"></script>
+    <script>
+      //<![CDATA[
+      M.util.js_pending("core/first");
+      require(['core/first'], function() {
+        require(['core/prefetch'])
+        ;
+        require(["media_videojs/loader"], function(loader) {
+          loader.setUp('zh-CN');
+        });;
+
+        require(['jquery', 'core_calendar/month_navigation_drag_drop'], function($, DragDrop) {
+          var root = $('#month-navigation-6638cc2a3a4d36638cc2a3a4d51-1');
+          DragDrop.init(root);
+        });
+        ;
+
+        require([
+          'jquery',
+          'core_calendar/month_view_drag_drop'
+        ], function(
+                $,
+                DragDrop
+        ) {
+          var root = $('#month-detailed-6638cc2a3a4d36638cc2a3a4d51-1');
+          DragDrop.init(root);
+        });
+        ;
+
+        require(['jquery', 'core_calendar/calendar', 'core_calendar/popover'], function($, Calendar, calendarPopover) {
+          Calendar.init($("#calendar-month-6638cc2a3a4d36638cc2a3a4d51-1"));
+        });
+        ;
+        M.util.js_pending('core_calendar/popover'); require(['core_calendar/popover'], function(amd) {M.util.js_complete('core_calendar/popover');});;
+        function legacy_activity_onclick_handler_1(e) { e.halt(); window.open('https://ilearn.fcu.edu.tw/mod/resource/view.php?id=964687&redirect=1'); return false; };
+
+
+        require(['jquery', 'tool_policy/jquery-eu-cookie-law-popup', 'tool_policy/policyactions'], function($, Popup, ActionsMod) {
+          // Initialise the guest popup.
+          $(document).ready(function() {
+            // Only show message if there is some policy related to guests.
+            // Get localised messages.
+            var textmessage = "If you continue browsing this website, you agree to our policies:" +
+                    "<ul>" +
+                    "<li>" +
+                    "<a href=\"https://ilearn.fcu.edu.tw/admin/tool/policy/view.php?versionid=4&amp;returnurl=https%3A%2F%2Filearn.fcu.edu.tw%2F\" " +
+                    "   data-action=\"view-guest\" data-versionid=\"4\" data-behalfid=\"1\" >" +
+                    "尊重及保護智慧財產權" +
+                    "</a>" +
+                    "</li>" +
+                    "" +
+                    "</ul>";
+            var continuemessage = "Continue";
+
+            // Initialize popup.
+            $(document.body).addClass('eupopup');
+            if ($(".eupopup").length > 0) {
+              $(document).euCookieLawPopup().init({
+                popupPosition: 'bottom',
+                popupTitle: '',
+                popupText: textmessage,
+                buttonContinueTitle: continuemessage,
+                buttonLearnmoreTitle: '',
+                compactStyle: true,
+              });
+            }
+
+            // Initialise the JS for the modal window which displays the policy versions.
+            ActionsMod.init('[data-action="view-guest"]');
+          });
+        });
+
+        ;
+
+        require(['core/moremenu'], function(moremenu) {
+          moremenu(document.querySelector('#moremenu-6638cc2a4a0ef-navbar-nav'));
+        });
+        ;
+
+        require(['core/usermenu', 'theme_moove/accessibilitysettings'], function(UserMenu, AccessibilitySettings) {
+          UserMenu.init();
+
+          AccessibilitySettings.init();
+        });
+        ;
+
+        require(['theme_boost/drawers']);
+        ;
+
+        require(['theme_boost/footer-popover'], function(FooterPopover) {
+          FooterPopover.init();
+        });
+        ;
+
+        M.util.js_pending('theme_boost/loader');
+        require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+          Drawer.init();
+          M.util.js_complete('theme_boost/loader');
+        });
+        ;
+        M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(2, []); M.util.js_complete('core/notification');});;
+        M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+        M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+        M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
+        M.util.js_complete("core/first");
+      });
+      //]]>
+    </script>
+    <script>
+      //<![CDATA[
+      M.str = {"moodle":{"lastmodified":"\u6700\u5f8c\u4fee\u6539","name":"\u540d\u7a31","error":"\u932f\u8aa4","info":"\u8cc7\u8a0a","yes":"\u662f","no":"\u5426","cancel":"\u53d6\u6d88","confirm":"\u78ba\u8a8d","areyousure":"\u4f60\u78ba\u5b9a\u55ce\uff1f","closebuttontitle":"\u95dc\u9589","unknownerror":"\u672a\u77e5\u7684\u932f\u8aa4","file":"\u6a94\u6848","url":"\u7db2\u5740","collapseall":"\u5168\u90e8\u7e2e\u5408","expandall":"\u5c55\u958b\u5168\u90e8"},"repository":{"type":"\u985e\u578b","size":"\u5927\u5c0f","invalidjson":"\u7121\u6548\u7684JSON \u5b57\u4e32","nofilesattached":"\u6c92\u6709\u9644\u52a0\u6a94\u6848","filepicker":"\u6a94\u6848\u6311\u9078\u5668","logout":"\u767b\u51fa","nofilesavailable":"\u6c92\u6709\u53ef\u7528\u7684\u6a94\u6848","norepositoriesavailable":"\u62b1\u6b49\uff0c\u4f60\u73fe\u6709\u7684\u5009\u5132\u6c92\u6709\u4e00\u500b\u53ef\u4ee5\u56de\u5fa9\u6210\u8981\u6c42\u683c\u5f0f\u7684\u6a94\u6848\u3002","fileexistsdialogheader":"\u6a94\u6848\u5df2\u5b58\u5728","fileexistsdialog_editor":"\u6709\u4e00\u500b\u9019\u540d\u7a31\u7684\u6a94\u6848\u5df2\u7d93\u88ab\u9644\u52a0\u5230\u4f60\u6b63\u5728\u7de8\u8f2f\u7684\u6587\u5b57\u4e0a\u4e86","fileexistsdialog_filemanager":"\u6709\u4e00\u500b\u9019\u540d\u7a31\u7684\u6a94\u6848\u5df2\u7d93\u88ab\u9644\u52a0\u4e0a\u53bb\u4e86","renameto":"\u91cd\u65b0\u547d\u540d\u70ba{$a}","referencesexist":"\u9019\u88e1\u6709{$a}\u500b\u5225\u540d\/\u6377\u5f91\u6a94\u6848\u4f7f\u7528\u9019\u4e00\u500b\u6a94\u6848\u4f5c\u70ba\u4ed6\u5011\u8cc7\u6e90\u3002","select":"\u9078\u64c7"},"admin":{"confirmdeletecomments":"\u60a8\u5373\u5c07\u522a\u9664\u8a55\u8ad6\uff0c\u60a8\u78ba\u5b9a\u55ce\uff1f","confirmation":"\u78ba\u8a8d"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":"\uff1a"}};
+      //]]>
+    </script>
+    <script>
+      //<![CDATA[
+      (function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"zh-hant"});
+      });
+        M.util.help_popups.setup(Y);
+        M.util.js_pending('random6638cc2a3a4d54'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random6638cc2a3a4d54'); });
+      })();
+      //]]>
+    </script>
+
+
+  </div>
+
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+
+<div class="eupopup-container eupopup-container-bottom eupopup-color-default" style="display: block;"><div class="eupopup-head"></div><div class="eupopup-body">If you continue browsing this website, you agree to our policies:<ul><li><a href="https://ilearn.fcu.edu.tw/admin/tool/policy/view.php?versionid=4&amp;returnurl=https%3A%2F%2Filearn.fcu.edu.tw%2F" data-action="view-guest" data-versionid="4" data-behalfid="1">尊重及保護智慧財產權</a></li></ul></div><div class="eupopup-buttons"><a href="#" class="eupopup-button eupopup-button_1">Continue</a><a href="/?cookie-policy" target="_blank" class="eupopup-button eupopup-button_2"></a><div class="clearfix"></div></div><a href="#" class="eupopup-closebutton">x</a></div><div></div></body></html>
