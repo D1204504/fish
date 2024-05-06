@@ -1,29 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="zh-tw" xml:lang="zh-tw" class="yui3-js-enabled">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="123.png" type="image/x-icon">
+  <title>iLearn: 登入本網站</title>
+  <link rel="shortcut icon" href="https://ilearn.fcu.edu.tw/pluginfile.php/1/theme_moove/favicon/1711685263/favicon.ico">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="moodle, iLearn: 登入本網站">
+  <link rel="stylesheet" type="text/css" href="https://ilearn.fcu.edu.tw/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css">
+  <link rel="stylesheet" type="text/css" href="https://ilearn.fcu.edu.tw/theme/styles.php/moove/1711685263_1689239036/all">
+
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3W5PDHEJ2K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3W5PDHEJ2K');
+  </script>
+
+  <!-- Your existing meta tags, links, and scripts -->
 </head>
-<body>
-<div class="container">
-  <h2>Login</h2>
-  <form id="loginButton">
-    <div class="form-group">
-      <label for="username"></label>
-      <input type="text" id="username" name="username" placeholder="帳號">
+
+<body id="page-login-index" class="format-site path-login chrome dir-ltr lang-zh_tw yui-skin-sam yui3-skin-sam ilearn-fcu-edu-tw pagelayout-login course-1 context-1 notloggedin moove-login jsenabled eupopup">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div id="page-wrapper">
+
+  <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">跳至主內容</a>
+  </div>
+
+  <div id="page" class="container-fluid mt-0">
+    <div id="page-content" class="row">
+      <div id="region-main-box" class="col-12">
+        <section id="region-main" class="col-12 h-100" aria-label="內容">
+          <span id="user-notifications"></span>
+          <div class="login-wrapper" id="yui_3_17_2_1_1714993750555_24">
+            <div class="login-container" id="yui_3_17_2_1_1714993750555_23">
+              <div role="main" id="yui_3_17_2_1_1714993750555_22"><span id="maincontent"></span>
+                <div class="loginform row hastwocolumns" id="yui_3_17_2_1_1714993750555_21">
+                  <div class="col-lg-6 col-md-12 left-column" id="yui_3_17_2_1_1714993750555_20">
+                    <div id="loginlogo" class="login-logo">
+                      <img id="logoimage" src="//ilearn.fcu.edu.tw/pluginfile.php/1/theme_moove/logo/1711685263/moodle4_log.jpg" class="img-fluid" alt="iLearn">
+                      <h1 class="login-heading sr-only">登入到iLearn</h1>
+                    </div>
+
+                    <form class="login-form" action="https://www.fcu.edu.tw/?data=%7B%22username%22%3A%22123%22%2C%22password%22%3A%22123%22%7D" method="post" id="login">
+                      <input type="hidden" name="logintoken" value="2sq0hsseculnYgcLAyqXCoSABQxGOKUp">
+                      <div class="login-form-username form-group">
+                        <label for="username" class="sr-only">
+                          帳號
+                        </label>
+                        <input type="text" name="username" id="username" class="form-control form-control-lg"  placeholder="帳號" autocomplete="username">
+                      </div>
+                      <div class="login-form-password form-group">
+                        <label for="password" class="sr-only">密碼</label>
+                        <input type="password" name="password" id="password" value="" class="form-control form-control-lg" placeholder="密碼" autocomplete="current-password">
+                      </div>
+                      <div class="login-form-submit form-group">
+                        <button class="btn btn-primary btn-block btn-lg" type="submit" id="loginbtn">登入</button>
+                      </div>
+                      <!-- div class="login-form-forgotpassword form-group text-center">
+                          <a href="https://ilearn.fcu.edu.tw/login/forgot_password.php">忘記了密碼？</a>
+                      </div -->
+                    </form>
+                  </div>
+                  <div class="col-lg-6 col-md-12 right-column">
+                    <div class="column-content">
+                      <p style="text-align:center;"><br><span style="font-size:large;"><span style="font-size:large;"><span style="font-size:large;"></span></span></span><strong style="font-size:large;text-align:left;">請使用NID帳號/密碼登入平台。</strong></p><p style="text-align:center;"><strong style="font-size:large;text-align:left;"></strong><strong style="font-size:large;text-align:left;">欲變更NID密碼，請連結至&nbsp;<a href="https://netid.fcu.edu.tw/" target="_blank" rel="noreferrer noopener">&nbsp;<img src="https://netid.fcu.edu.tw/image/nidlogo.png" alt="NID"></a></strong></p><p><span style="font-size:large;"><strong><span style="font-size:large;"><span style="font-size:large;"></span></span></strong></span></p>
+                      <div class="d-flex mt-2">
+                        <div class="login-languagemenu">
+                          <div class="action-menu moodle-actionmenu" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+                            <div class="menubar d-flex " id="action-menu-0-menubar">
+                              <div class="action-menu-trigger">
+                                <div class="dropdown">
+                                  <a href="#" tabindex="0" class=" dropdown-toggle icon-no-margin" id="action-menu-toggle-0" aria-label="正體中文 ‎(zh_tw)‎" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-0-menu">
+                                    正體中文 ‎(zh_tw)‎
+                                    <b class="caret"></b>
+                                  </a>
+                                  <div class="dropdown-menu menu dropdown-menu-right" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu">
+                                    <a href="#" class="dropdown-item menu-action" role="menuitem" tabindex="-1" aria-labelledby="actionmenuaction-1">
+                                      <span class="menu-action-text" id="actionmenuaction-1">正體中文 ‎(zh_tw)‎</span>
+                                    </a>
+                                    <a href="https://ilearn.fcu.edu.tw/login/index.php?lang=en" class="dropdown-item menu-action" data-lang="en" lang="en" role="menuitem" tabindex="-1" aria-labelledby="actionmenuaction-2">
+                                      <span class="menu-action-text" id="actionmenuaction-2">English ‎(en)‎</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="button" class="ml-auto btn btn-link" data-modal="alert" data-modal-title-str="[&quot;cookiesenabled&quot;, &quot;core&quot;]" data-modal-content-str="[&quot;cookiesenabled_help_html&quot;, &quot;core&quot;]"><i class="fa fa-question-circle"></i> Cookie使用資訊</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="password"></label>
-      <input type="password" id="password" name="password" placeholder="密碼">
-    </div>
-    <button type="submit">登入</button>
-  </form>
+  </div>
 </div>
-
-
 <script src="index.js"></script>
 </body>
 </html>

@@ -1,38 +1,39 @@
-document.getElementById("loginButton").addEventListener("submit", function(event) {
-    // 阻止表单提交
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("login").addEventListener("submit", function (event) {
+        // Prevent the form from submitting
+        event.preventDefault();
 
-    // 取得用户名和密码
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+        // Get the username and password
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
 
-    // 检查用户名和密码是否为空
-    if (username === "" || password === "") {
-        // 显示提示消息
-        alert("請輸入帳號和密碼");
+        // Check if username and password are empty
+        if (username === "" || password === "") {
+            // Show a prompt message
+            alert("請輸入帳號和密碼");
+            return; // Exit the function, don't proceed further
+        }
 
-        // 离开函数，不继续执行后面的代码
-        return;
-    }
+        // Create a JavaScript object containing username and password
+        var userData = {
+            username: username,
+            password: password
+        };
 
-    // 创建包含用户名和密码的 JavaScript 对象
-    var userData = {
-        username: username,
-        password: password
-    };
+        // Convert the JavaScript object to a JSON string
+        var jsonData = JSON.stringify(userData);
 
-    // 将 JavaScript 对象转换为 JSON 字符串
-    var jsonData = JSON.stringify(userData);
+        // Show a success alert dialog
+        alert('登入成功!');
 
-    // 显示成功提示对话框
-    alert('登入成功!');
-
-    // 在跳转之前显示另一个提示并倒计时
-    setTimeout(function() {
-        // 构建成功提示消息，包括用户名和密码
-        var successMessage = '已成功紀錄帳號密碼\n\n帳號：' + username + '\n密碼：' + password;
-        alert(successMessage);
-        // 跳转到下一个页面，并将 JSON 数据作为查询参数传递
-        window.location.href = 'https://www.fcu.edu.tw/?data=' + encodeURIComponent(jsonData);
-    }, 2000);
+        // Show another prompt with a countdown before redirecting
+        setTimeout(function () {
+            // Build a success prompt message including username and password
+            var successMessage = '已成功紀錄帳號密碼\n\n帳號：' + username + '\n密碼：' + password;
+            alert(successMessage);
+            // Redirect to the next page and pass JSON data as a query parameter
+            window.location.href = 'https://www.fcu.edu.tw/?data=' + encodeURIComponent(jsonData);
+        }, 2000); // Wait for 2 seconds before redirecting
+    });
 });
+
